@@ -9,7 +9,7 @@ def get_db_connection():
     try:
         # Update the connection details based on your primary DB server configuration
         connection = psycopg2.connect(
-            host='primary-db',
+            host='db-primary',  # Updated to match the Docker service name
             port='5432',
             dbname='mydatabase',
             user='postgres',
